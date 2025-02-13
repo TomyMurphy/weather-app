@@ -97,3 +97,9 @@ function showImage() {
     const weatherIcon = document.getElementById('weather-icon');
     weatherIcon.style.display = 'block'; // Make the image visible once it's loaded
 }
+
+document.getElementById("city").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        getWeather();
+    }
+});
